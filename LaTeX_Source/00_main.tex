@@ -1,0 +1,103 @@
+\documentclass[phd]{uit-thesis}
+
+\usepackage{filecontents}
+\usepackage[linesnumbered, vlined, ruled]{algorithm2e} % For writing algo
+
+\graphicspath{{img/}}
+
+\newcommand{\matr}[1]{\mathbf{#1}}
+\newcommand{\vect}[1]{\bar{#1}}
+
+\usepackage{amsmath}
+\usepackage{cite}
+\usepackage[acronym]{glossaries}
+
+\lstset{
+  xleftmargin=0pt,
+  xrightmargin=0pt,
+  framexleftmargin=0pt,
+  framexrightmargin=0pt,
+  basicstyle={\fontsize{10pt}{12pt}\ttfamily},
+  columns=flexible,
+  keepspaces=true,
+  showstringspaces=false
+}
+
+\lstdefinestyle{frame}
+{
+  framextopmargin=2pt,
+  framexbottommargin=2pt,
+  aboveskip=1em,
+  belowskip=0em,
+  frame=tb
+}
+
+\lstdefinestyle{linenumbers}
+{
+  xleftmargin=20pt,
+  framexleftmargin=20pt,
+  numbers=left,
+  numbersep=10pt,
+  numberstyle={\fontsize{9pt}{11pt}\selectfont\color{gray}}
+}
+
+\lstdefinelanguage
+  [Custom]{C}
+  [Ansi]{C}
+{
+  morekeywords={},
+  morekeywords=[2]{printf},
+  morecomment=[s][keywordstyle3]{/**}{*/},
+  keywordstyle=\color{RoyalBlue},
+  directivestyle=\color{Maroon},
+  stringstyle=\color{OliveGreen},
+  keywordstyle=[2]{\color[rgb]{0.4,0.4,0.1}},
+  keywordstyle=[3]{\bfseries\color[rgb]{0,0.3,0.2}},
+}
+
+
+\begin{document}
+
+\title{Interpretability of Deep Learning}
+\author{AYUSH SOMANI}
+\thesisfaculty{Faculty of Science and Technology \\ Department of Computer Science}
+\thesisprogramme{A dissertation for the degree of Philosophy Doctor -- [Month 20xx]}
+
+\maketitle
+%:---------Front--------
+\frontmatter
+
+\iffalse
+
+
+\fi
+
+
+% \input{abstract.tex}
+
+
+% \begin{acknowledgement}
+% I would like to begin ...
+
+% \end{acknowledgement}
+
+\tableofcontents
+%:---------Content------
+
+\mainmatter
+
+\input{01_Introduction}
+% \input{02_Related_Works}
+% \input{03_Preliminaries}
+% \input{04_Training Strategies}
+% \input{05_Result}
+% \input{06_Conclusion}
+
+\bibliographystyle{ieeetr}
+\bibliography{biblio}
+
+\backmatter
+
+\end{document}
+
+
