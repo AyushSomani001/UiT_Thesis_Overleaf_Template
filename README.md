@@ -27,8 +27,8 @@ In this repository, you will find:
 
 To make things even easier, we've included GIFs and images that guide you through the process of editing and compiling your LaTeX files.
 
-![Editing LaTeX Template](images/editing-template.gif)
-![Compiling LaTeX to PDF](images/compiling-latex.gif)
+![Editing LaTeX Template](assets/Template_Switch.png)
+![Editing FrontPage](assets/Front_Page-Edit.png)
 *Figure 1: Editing the LaTeX template in Overleaf*
 
 
